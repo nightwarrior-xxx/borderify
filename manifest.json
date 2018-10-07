@@ -1,0 +1,20 @@
+{
+"manifest_version":2,
+"name":"Borders",
+"version":"1.0",
+"description":"It add border to web pages",
+"icons":{
+  "48":"icons/rename-48.svg"
+},
+"content_scripts":[
+  {
+    "matches":["*://*.mozilla.org/*"],
+    "js":["borderify.js"]
+  }
+],
+"applications":{
+  "gecko":{
+    "id":"xxx@xxx.com"
+  }
+}
+}
